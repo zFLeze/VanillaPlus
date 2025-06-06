@@ -190,6 +190,59 @@ public class ModBlocks {
                     .strength(2f, 2f)
                     .sounds(BlockSoundGroup.WOOD)));
 
+
+
+
+
+    public static final Block FIREPROOF_JUNGLE_PLANKS = registerBlock("fireproof_jungle_planks",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(2f, 3f)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block FIREPROOF_JUNGLE_LOG = registerBlock("fireproof_jungle_log",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(2f, 2f)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block FIREPROOF_JUNGLE_WOOD = registerBlock("fireproof_jungle_wood",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(2f, 2f)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block FIREPROOF_STRIPPED_JUNGLE_LOG = registerBlock("fireproof_stripped_jungle_log",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(2f, 2f)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block FIREPROOF_STRIPPED_JUNGLE_WOOD = registerBlock("fireproof_stripped_jungle_wood",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(2f, 2f)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+
+
+
+
+    public static final Block FIREPROOF_MANGROVE_PLANKS = registerBlock("fireproof_mangrove_planks", new Block(AbstractBlock.Settings.create()
+            .strength(2f, 3f)
+            .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block FIREPROOF_MANGROVE_LOG = registerBlock("fireproof_mangrove_log", new Block(AbstractBlock.Settings.create()
+            .strength(2f, 2f)
+            .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block FIREPROOF_MANGROVE_WOOD = registerBlock("fireproof_mangrove_wood", new Block(AbstractBlock.Settings.create()
+            .strength(2f, 2f)
+            .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block FIREPROOF_STRIPPED_MANGROVE_LOG = registerBlock("fireproof_stripped_mangrove_log", new Block(AbstractBlock.Settings.create()
+            .strength(2f, 3f)
+            .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block FIREPROOF_STRIPPED_MANGROVE_WOOD = registerBlock("fireproof_stripped_mangrove_wood", new Block(AbstractBlock.Settings.create()
+            .strength(2f, 2f)
+            .sounds(BlockSoundGroup.WOOD)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(VanillaPlus.MOD_ID, name), block);
@@ -245,6 +298,18 @@ public class ModBlocks {
             entries.add(FIREPROOF_BAMBOO_MOSAIC);
             entries.add(FIREPROOF_STRIPPED_BAMBOO_LOG);
             entries.add(FIREPROOF_STRIPPED_BAMBOO_WOOD);
+
+            entries.add(FIREPROOF_JUNGLE_PLANKS);
+            entries.add(FIREPROOF_JUNGLE_LOG);
+            entries.add(FIREPROOF_JUNGLE_WOOD);
+            entries.add(FIREPROOF_STRIPPED_JUNGLE_LOG);
+            entries.add(FIREPROOF_STRIPPED_JUNGLE_WOOD);
+
+            entries.add(FIREPROOF_MANGROVE_PLANKS);
+            entries.add(FIREPROOF_MANGROVE_LOG);
+            entries.add(FIREPROOF_MANGROVE_WOOD);
+            entries.add(FIREPROOF_STRIPPED_MANGROVE_LOG);
+            entries.add(FIREPROOF_STRIPPED_MANGROVE_WOOD);
         });
     }
 }
