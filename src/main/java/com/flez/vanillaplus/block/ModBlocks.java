@@ -201,7 +201,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WOOD)));
 
     public static final Block FIREPROOF_JUNGLE_LOG = registerBlock("fireproof_jungle_log",
-            new Block(AbstractBlock.Settings.create()
+            new PillarBlock(AbstractBlock.Settings.create()
                     .strength(2f, 2f)
                     .sounds(BlockSoundGroup.WOOD)));
 

@@ -78,6 +78,12 @@ public class ModModelProvider extends FabricModelProvider {
                 ModBlocks.FIREPROOF_STRIPPED_BAMBOO_WOOD);
 
         registerLogPair(generator,
+                ModBlocks.FIREPROOF_CHERRY_LOG,
+                ModBlocks.FIREPROOF_CHERRY_WOOD,
+                ModBlocks.FIREPROOF_STRIPPED_CHERRY_LOG,
+                ModBlocks.FIREPROOF_STRIPPED_CHERRY_WOOD);
+
+        registerLogPair(generator,
                 ModBlocks.FIREPROOF_BIRCH_LOG,
                 ModBlocks.FIREPROOF_BIRCH_WOOD,
                 ModBlocks.FIREPROOF_STRIPPED_BIRCH_LOG,
@@ -93,5 +99,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OXIDIZED_COPPER_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.OXIDIZED_COPPER_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMERALD_DUST, Models.GENERATED);
+
     }
 }
