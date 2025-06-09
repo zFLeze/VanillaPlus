@@ -1,5 +1,7 @@
 package com.flez.vanillaplus.datagen;
 
+import com.flez.vanillaplus.block.ModBlocks;
+import com.flez.vanillaplus.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;

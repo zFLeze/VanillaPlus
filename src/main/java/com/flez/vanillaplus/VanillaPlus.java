@@ -1,6 +1,7 @@
 package com.flez.vanillaplus;
 
 import com.flez.vanillaplus.block.ModBlocks;
+import com.flez.vanillaplus.item.ModItemGroups;
 import com.flez.vanillaplus.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,5 +16,6 @@ public class VanillaPlus implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroup();
 	}
 }
