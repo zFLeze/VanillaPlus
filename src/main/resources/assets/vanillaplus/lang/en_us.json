@@ -50,9 +50,13 @@
   "block.vanillaplus.fireproof_stripped_mangrove_wood": "Fireproof Stripped Mangrove Wood",
 
   "block.vanillaplus.fireproof_bamboo_planks": "Fireproof Bamboo Planks",
-  "block.vanillaplus.fireproof_bamboo_log": "Fireproof Bamboo Log",
-  "block.vanillaplus.fireproof_bamboo_wood": "Fireproof Bamboo Wood",
-  "block.vanillaplus.fireproof_stripped_bamboo_log": "Fireproof Stripped Bamboo Log",
-  "block.vanillaplus.fireproof_stripped_bamboo_wood": "Fireproof Stripped Bamboo Wood",
-  "block.vanillaplus.fireproof_bamboo_mosaic": "Fireproof Bamboo Mosaic"
+  "block.vanillaplus.fireproof_bamboo_block": "Fireproof Bamboo Block",
+  "block.vanillaplus.fireproof_stripped_bamboo_block": "Fireproof Stripped Bamboo Block",
+  "block.vanillaplus.fireproof_bamboo_mosaic": "Fireproof Bamboo Mosaic",
+
+  "block.vanillaplus.fireproof_birch_planks": "Fireproof Birch Planks",
+  "block.vanillaplus.fireproof_birch_log": "Fireproof Birch Log",
+  "block.vanillaplus.fireproof_birch_wood": "Fireproof Birch Wood",
+  "block.vanillaplus.fireproof_stripped_birch_log": "Fireproof Stripped Birch Log",
+  "block.vanillaplus.fireproof_stripped_birch_wood": "Fireproof Birch Wood"
 }

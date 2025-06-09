@@ -5,13 +5,13 @@
 	"name": "VanillaPlus",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Flez"
 	],
 	"contact": {
 		"homepage": "https://flez.com",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/zFLeze/VanillaPlus"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/vanillaplus/icon.png",
 	"environment": "*",
 	"entrypoints": {

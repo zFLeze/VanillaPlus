@@ -21,7 +21,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
-
+        // 9 oxidized copper ingot -> 1 oxidized copper
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Blocks.OXIDIZED_COPPER)
                 .pattern("III")
                 .pattern("III")
@@ -36,5 +36,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.OXIDIZED_COPPER), conditionsFromItem(Blocks.OXIDIZED_COPPER))
                 .offerTo(recipeExporter, Identifier.of("vanillaplus", "oxidized_copper_ingots_from_block"));
 
+        
     }
 }

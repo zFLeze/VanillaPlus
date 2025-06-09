@@ -24,15 +24,19 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
+
         // PLANKS
         generator.registerSimpleCubeAll(ModBlocks.FIREPROOF_OAK_PLANKS);
         generator.registerSimpleCubeAll(ModBlocks.FIREPROOF_SPRUCE_PLANKS);
         generator.registerSimpleCubeAll(ModBlocks.FIREPROOF_DARK_OAK_PLANKS);
         generator.registerSimpleCubeAll(ModBlocks.FIREPROOF_JUNGLE_PLANKS);
+        generator.registerSimpleCubeAll(ModBlocks.FIREPROOF_CHERRY_PLANKS);
         generator.registerSimpleCubeAll(ModBlocks.FIREPROOF_ACACIA_PLANKS);
         generator.registerSimpleCubeAll(ModBlocks.FIREPROOF_MANGROVE_PLANKS);
         generator.registerSimpleCubeAll(ModBlocks.FIREPROOF_BAMBOO_PLANKS);
         generator.registerSimpleCubeAll(ModBlocks.FIREPROOF_BAMBOO_MOSAIC);
+        generator.registerSimpleCubeAll(ModBlocks.FIREPROOF_BIRCH_PLANKS);
+
 
         // LOGS & WOODS
         registerLogPair(generator,
@@ -50,8 +54,8 @@ public class ModModelProvider extends FabricModelProvider {
         registerLogPair(generator,
                 ModBlocks.FIREPROOF_DARK_OAK_LOG,
                 ModBlocks.FIREPROOF_DARK_OAK_WOOD,
-                ModBlocks.FIREPROOF_STRIPPED_OAK_LOG,
-                ModBlocks.FIREPROOF_STRIPPED_OAK_WOOD);
+                ModBlocks.FIREPROOF_STRIPPED_DARK_OAK_LOG,
+                ModBlocks.FIREPROOF_STRIPPED_DARK_OAK_WOOD);
 
         registerLogPair(generator,
                 ModBlocks.FIREPROOF_JUNGLE_LOG,
@@ -72,12 +76,6 @@ public class ModModelProvider extends FabricModelProvider {
                 ModBlocks.FIREPROOF_STRIPPED_MANGROVE_WOOD);
 
         registerLogPair(generator,
-                ModBlocks.FIREPROOF_BAMBOO_LOG,
-                ModBlocks.FIREPROOF_BAMBOO_WOOD,
-                ModBlocks.FIREPROOF_STRIPPED_BAMBOO_LOG,
-                ModBlocks.FIREPROOF_STRIPPED_BAMBOO_WOOD);
-
-        registerLogPair(generator,
                 ModBlocks.FIREPROOF_CHERRY_LOG,
                 ModBlocks.FIREPROOF_CHERRY_WOOD,
                 ModBlocks.FIREPROOF_STRIPPED_CHERRY_LOG,
@@ -88,6 +86,13 @@ public class ModModelProvider extends FabricModelProvider {
                 ModBlocks.FIREPROOF_BIRCH_WOOD,
                 ModBlocks.FIREPROOF_STRIPPED_BIRCH_LOG,
                 ModBlocks.FIREPROOF_STRIPPED_BIRCH_WOOD);
+
+        generator.registerLog(ModBlocks.FIREPROOF_BAMBOO_BLOCK)
+                .log(ModBlocks.FIREPROOF_BAMBOO_BLOCK);
+
+        generator.registerLog(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_BLOCK)
+                .log(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_BLOCK);
+
     }
 
     @Override
@@ -99,6 +104,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OXIDIZED_COPPER_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.OXIDIZED_COPPER_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMERALD_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TREE_BARK, Models.GENERATED);
 
     }
 }

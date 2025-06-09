@@ -57,10 +57,8 @@ public class ModLootableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FIREPROOF_STRIPPED_MANGROVE_WOOD);
 
         addDrop(ModBlocks.FIREPROOF_BAMBOO_PLANKS);
-        addDrop(ModBlocks.FIREPROOF_BAMBOO_LOG);
-        addDrop(ModBlocks.FIREPROOF_BAMBOO_WOOD);
-        addDrop(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_LOG);
-        addDrop(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_WOOD);
+        addDrop(ModBlocks.FIREPROOF_BAMBOO_BLOCK);
+        addDrop(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_BLOCK);
         addDrop(ModBlocks.FIREPROOF_BAMBOO_MOSAIC);
     }
 }

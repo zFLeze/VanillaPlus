@@ -17,6 +17,7 @@ public class ModItems {
     public static final Item COAL_DUST = registerItem("coal_dust", new Item(new Item.Settings()));
     public static final Item AMETHYST_DUST = registerItem("amethyst_dust", new Item(new Item.Settings()));
     public static final Item GOLD_DUST = registerItem("gold_dust", new Item(new Item.Settings()));
+    public static final Item TREE_BARK = registerItem("tree_bark", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(VanillaPlus.MOD_ID, name), item);
@@ -33,6 +34,7 @@ public class ModItems {
             entries.add(COAL_DUST);
             entries.add(AMETHYST_DUST);
             entries.add(GOLD_DUST);
+            entries.add(TREE_BARK);
         });
     }
 }

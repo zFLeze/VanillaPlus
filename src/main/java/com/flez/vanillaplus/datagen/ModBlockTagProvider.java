@@ -49,11 +49,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.FIREPROOF_STRIPPED_CHERRY_WOOD)
 
                 .add(ModBlocks.FIREPROOF_BAMBOO_PLANKS)
-                .add(ModBlocks.FIREPROOF_BAMBOO_LOG)
-                .add(ModBlocks.FIREPROOF_BAMBOO_WOOD)
+                .add(ModBlocks.FIREPROOF_BAMBOO_BLOCK)
                 .add(ModBlocks.FIREPROOF_BAMBOO_MOSAIC)
-                .add(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_LOG)
-                .add(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_WOOD)
+                .add(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_BLOCK)
 
                 .add(ModBlocks.FIREPROOF_MANGROVE_PLANKS)
                 .add(ModBlocks.FIREPROOF_MANGROVE_LOG)
