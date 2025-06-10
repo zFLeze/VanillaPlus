@@ -60,78 +60,72 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
         //  Fireproof Logs, Planks And Wood Blocks
-        //  Planks
+        //  PLANKS
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_OAK_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_OAK_LOG)
+                .input(ModBlocks.FIREPROOF_OAK_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_OAK_LOG), conditionsFromItem(ModBlocks.FIREPROOF_OAK_LOG))
-                .criterion("has_honeycomb", conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_oak_planks"));
+                .criterion(hasItem(ModBlocks.FIREPROOF_OAK_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_OAK_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_oak_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_SPRUCE_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_SPRUCE_LOG)
+                .input(ModBlocks.FIREPROOF_SPRUCE_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_SPRUCE_LOG), conditionsFromItem(ModBlocks.FIREPROOF_SPRUCE_LOG))
-                .criterion("has_honeycomb", conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_spruce_planks"));
+                .criterion(hasItem(ModBlocks.FIREPROOF_SPRUCE_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_SPRUCE_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_spruce_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_DARK_OAK_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_DARK_OAK_LOG)
+                .input(ModBlocks.FIREPROOF_DARK_OAK_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_DARK_OAK_LOG), conditionsFromItem(ModBlocks.FIREPROOF_DARK_OAK_LOG))
-                .criterion("has_honeycomb", conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_dark_oak_planks"));
+                .criterion(hasItem(ModBlocks.FIREPROOF_DARK_OAK_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_DARK_OAK_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_dark_oak_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_JUNGLE_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_JUNGLE_LOG)
+                .input(ModBlocks.FIREPROOF_JUNGLE_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_JUNGLE_LOG), conditionsFromItem(ModBlocks.FIREPROOF_JUNGLE_LOG))
-                .criterion("has_honeycomb", conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_jungle_planks"));
+                .criterion(hasItem(ModBlocks.FIREPROOF_JUNGLE_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_JUNGLE_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_jungle_planks"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_BIRCH_PLANKS, 1)
+                .input(ModBlocks.FIREPROOF_BIRCH_PLANKS)
+                .input(Items.HONEYCOMB)
+                .criterion(hasItem(ModBlocks.FIREPROOF_BIRCH_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_BIRCH_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_birch_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_ACACIA_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_ACACIA_LOG)
+                .input(ModBlocks.FIREPROOF_ACACIA_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_ACACIA_LOG), conditionsFromItem(ModBlocks.FIREPROOF_ACACIA_LOG))
-                .criterion("has_honeycomb", conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_acacia_planks"));
+                .criterion(hasItem(ModBlocks.FIREPROOF_ACACIA_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_ACACIA_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_acacia_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_MANGROVE_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_MANGROVE_LOG)
+                .input(ModBlocks.FIREPROOF_MANGROVE_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_MANGROVE_LOG), conditionsFromItem(ModBlocks.FIREPROOF_MANGROVE_LOG))
-                .criterion("has_honeycomb", conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_mangrove_planks"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_CHERRY_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_CHERRY_LOG)
-                .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_CHERRY_LOG), conditionsFromItem(ModBlocks.FIREPROOF_CHERRY_LOG))
-                .criterion("has_honeycomb", conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_cherry_planks"));
+                .criterion(hasItem(ModBlocks.FIREPROOF_MANGROVE_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_MANGROVE_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_mangrove_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_BAMBOO_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_BAMBOO_BLOCK)
+                .input(ModBlocks.FIREPROOF_BAMBOO_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_BAMBOO_BLOCK), conditionsFromItem(ModBlocks.FIREPROOF_BAMBOO_BLOCK))
-                .criterion("has_honeycomb", conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_bamboo_planks"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_BAMBOO_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_BLOCK)
-                .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_BLOCK), conditionsFromItem(ModBlocks.FIREPROOF_STRIPPED_BAMBOO_BLOCK))
-                .criterion("has_honeycomb", conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_stripped_bamboo_planks"));
+                .criterion(hasItem(ModBlocks.FIREPROOF_BAMBOO_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_BAMBOO_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_bamboo_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_BAMBOO_MOSAIC, 1)
                 .input(ModBlocks.FIREPROOF_BAMBOO_MOSAIC)
                 .input(Items.HONEYCOMB)
                 .criterion(hasItem(ModBlocks.FIREPROOF_BAMBOO_MOSAIC), conditionsFromItem(ModBlocks.FIREPROOF_BAMBOO_MOSAIC))
-                .criterion("has_honeycomb", conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_bamboo_mosaic"));
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_bamboo_mosaic"));
 
 
+        //  LOGS & WOOD Blocks
         //  Logs & Woods
         //  Oak
         offerFireproofLogRecipe(recipeExporter,
@@ -166,12 +160,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerFireproofLogRecipe(recipeExporter,
                 Items.SPRUCE_WOOD,
                 ModBlocks.FIREPROOF_SPRUCE_WOOD.asItem(),
-                "fireproof_spruce_log");
+                "fireproof_spruce_wood");
 
         offerFireproofLogRecipe(recipeExporter,
                 Items.STRIPPED_SPRUCE_LOG,
                 ModBlocks.FIREPROOF_STRIPPED_SPRUCE_LOG.asItem(),
-                "fireproof_stripped_log");
+                "fireproof_stripped_spruce_log");
 
         offerFireproofLogRecipe(recipeExporter,
                 Items.STRIPPED_SPRUCE_WOOD,
@@ -193,13 +187,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerFireproofLogRecipe(recipeExporter,
                 Items.STRIPPED_DARK_OAK_LOG,
-                ModBlocks.FIREPROOF_DARK_OAK_LOG.asItem(),
+                ModBlocks.FIREPROOF_STRIPPED_DARK_OAK_LOG.asItem(),
                 "fireproof_stripped_dark_oak_log");
 
         offerFireproofLogRecipe(recipeExporter,
                 Items.STRIPPED_DARK_OAK_WOOD,
                 ModBlocks.FIREPROOF_STRIPPED_DARK_OAK_WOOD.asItem(),
-                "fireproof_stripped_dark_oak_log");
+                "fireproof_stripped_dark_oak_wood");
 
 
 
@@ -222,7 +216,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerFireproofLogRecipe(recipeExporter,
                 Items.STRIPPED_JUNGLE_WOOD,
                 ModBlocks.FIREPROOF_STRIPPED_JUNGLE_WOOD.asItem(),
-                "fireproof_stripped_jungle_log");
+                "fireproof_stripped_jungle_wood");
 
 
 
@@ -293,6 +287,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 ModBlocks.FIREPROOF_STRIPPED_CHERRY_WOOD.asItem(),
                 "fireproof_stripped_cherry_wood");
 
+        // Birch
+        offerFireproofLogRecipe(recipeExporter,
+                Items.BIRCH_LOG,
+                ModBlocks.FIREPROOF_BIRCH_LOG.asItem(),
+                "fireproof_birch_log");
+
+        offerFireproofLogRecipe(recipeExporter,
+                Items.BIRCH_WOOD,
+                ModBlocks.FIREPROOF_BIRCH_WOOD.asItem(),
+                "fireproof_birch_wood");
+
+        offerFireproofLogRecipe(recipeExporter,
+                Items.STRIPPED_BIRCH_LOG,
+                ModBlocks.FIREPROOF_STRIPPED_BIRCH_LOG.asItem(),
+                "fireproof_stripped_birch_log");
+
+        offerFireproofLogRecipe(recipeExporter,
+                Items.STRIPPED_BIRCH_WOOD,
+                ModBlocks.FIREPROOF_STRIPPED_BIRCH_WOOD.asItem(),
+                "fireproof_stripped_birch_wood");
+
+        // Bamboo
+        offerFireproofLogRecipe(recipeExporter,
+                Items.BAMBOO_BLOCK,
+                ModBlocks.FIREPROOF_BAMBOO_BLOCK.asItem(),
+                "fireproof_bamboo_block");
+
+        offerFireproofLogRecipe(recipeExporter,
+                Items.STRIPPED_BAMBOO_BLOCK,
+                ModBlocks.FIREPROOF_STRIPPED_BAMBOO_BLOCK.asItem(),
+                "fireproof_stripped_bamboo_block");
 
         //  Log/Wood ---> 4 Planks
         //  OAK
@@ -336,7 +361,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 "fireproof_spruce_planks");
 
         offerCraftPlanksRecipe(recipeExporter,
-                ModBlocks.FIREPROOF_STRIPPED_SPRUCE_LOG.asItem(),
+                ModBlocks.FIREPROOF_STRIPPED_SPRUCE_WOOD.asItem(),
                 ModBlocks.FIREPROOF_SPRUCE_PLANKS.asItem(),
                 "fireproof_spruce_planks");
 
