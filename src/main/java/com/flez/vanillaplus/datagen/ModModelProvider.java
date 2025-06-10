@@ -104,7 +104,5 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OXIDIZED_COPPER_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.OXIDIZED_COPPER_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMERALD_DUST, Models.GENERATED);
-        itemModelGenerator.register(ModItems.TREE_BARK, Models.GENERATED);
-
     }
 }

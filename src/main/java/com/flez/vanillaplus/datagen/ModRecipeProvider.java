@@ -62,67 +62,74 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //  Fireproof Logs, Planks And Wood Blocks
         //  PLANKS
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_OAK_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_OAK_PLANKS)
+                .input(Items.OAK_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_OAK_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_OAK_PLANKS))
+                .criterion(hasItem(Items.OAK_PLANKS), conditionsFromItem(Items.OAK_PLANKS))
                 .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_oak_planks"));
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "fireproof_oak_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_SPRUCE_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_SPRUCE_PLANKS)
+                .input(Items.SPRUCE_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_SPRUCE_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_SPRUCE_PLANKS))
+                .criterion(hasItem(Items.SPRUCE_PLANKS), conditionsFromItem(Items.SPRUCE_PLANKS))
                 .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_spruce_planks"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_DARK_OAK_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_DARK_OAK_PLANKS)
-                .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_DARK_OAK_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_DARK_OAK_PLANKS))
-                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_dark_oak_planks"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_JUNGLE_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_JUNGLE_PLANKS)
-                .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_JUNGLE_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_JUNGLE_PLANKS))
-                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_jungle_planks"));
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "fireproof_spruce_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_BIRCH_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_BIRCH_PLANKS)
+                .input(Items.BIRCH_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_BIRCH_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_BIRCH_PLANKS))
+                .criterion(hasItem(Items.BIRCH_PLANKS), conditionsFromItem(Items.BIRCH_PLANKS))
                 .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_birch_planks"));
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "fireproof_birch_planks"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_JUNGLE_PLANKS, 1)
+                .input(Items.JUNGLE_PLANKS)
+                .input(Items.HONEYCOMB)
+                .criterion(hasItem(Items.JUNGLE_PLANKS), conditionsFromItem(Items.JUNGLE_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "fireproof_jungle_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_ACACIA_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_ACACIA_PLANKS)
+                .input(Items.ACACIA_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_ACACIA_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_ACACIA_PLANKS))
+                .criterion(hasItem(Items.ACACIA_PLANKS), conditionsFromItem(Items.ACACIA_PLANKS))
                 .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_acacia_planks"));
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "fireproof_acacia_planks"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_DARK_OAK_PLANKS, 1)
+                .input(Items.DARK_OAK_PLANKS)
+                .input(Items.HONEYCOMB)
+                .criterion(hasItem(Items.DARK_OAK_PLANKS), conditionsFromItem(Items.DARK_OAK_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "fireproof_dark_oak_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_MANGROVE_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_MANGROVE_PLANKS)
+                .input(Items.MANGROVE_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_MANGROVE_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_MANGROVE_PLANKS))
+                .criterion(hasItem(Items.MANGROVE_PLANKS), conditionsFromItem(Items.MANGROVE_PLANKS))
                 .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_mangrove_planks"));
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "fireproof_mangrove_planks"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_CHERRY_PLANKS, 1)
+                .input(Items.CHERRY_PLANKS)
+                .input(Items.HONEYCOMB)
+                .criterion(hasItem(Items.CHERRY_PLANKS), conditionsFromItem(Items.CHERRY_PLANKS))
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "fireproof_cherry_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_BAMBOO_PLANKS, 1)
-                .input(ModBlocks.FIREPROOF_BAMBOO_PLANKS)
+                .input(Items.BAMBOO_PLANKS)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_BAMBOO_PLANKS), conditionsFromItem(ModBlocks.FIREPROOF_BAMBOO_PLANKS))
+                .criterion(hasItem(Items.BAMBOO_PLANKS), conditionsFromItem(Items.BAMBOO_PLANKS))
                 .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_bamboo_planks"));
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "fireproof_bamboo_planks"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIREPROOF_BAMBOO_MOSAIC, 1)
-                .input(ModBlocks.FIREPROOF_BAMBOO_MOSAIC)
+                .input(Items.BAMBOO_MOSAIC)
                 .input(Items.HONEYCOMB)
-                .criterion(hasItem(ModBlocks.FIREPROOF_BAMBOO_MOSAIC), conditionsFromItem(ModBlocks.FIREPROOF_BAMBOO_MOSAIC))
+                .criterion(hasItem(Items.BAMBOO_MOSAIC), conditionsFromItem(Items.BAMBOO_MOSAIC))
                 .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
-                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "normal_crafting_fireproof_bamboo_mosaic"));
+                .offerTo(recipeExporter, Identifier.of(VanillaPlus.MOD_ID, "fireproof_bamboo_mosaic"));
 
 
         //  LOGS & WOOD Blocks
