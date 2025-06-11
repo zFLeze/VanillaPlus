@@ -75,6 +75,9 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WOOD)
                     .nonOpaque()));
 
+    public static final Block FIREPROOF_OAK_SIGN = registerBlock("fireproof_oak_sign",
+            new SignBlock());
+
 
 
 
