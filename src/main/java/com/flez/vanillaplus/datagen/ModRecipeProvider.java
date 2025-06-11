@@ -43,7 +43,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
-        // Oxidized Copper Recipe
+        //  Oxidized Copper Recipe
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Blocks.OXIDIZED_COPPER)
                 .pattern("III")
                 .pattern("III")
@@ -57,7 +57,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.OXIDIZED_COPPER), conditionsFromItem(Blocks.OXIDIZED_COPPER))
                 .offerTo(recipeExporter, Identifier.of("vanillaplus", "oxidized_copper_ingots_from_block"));
 
-
+        //  Nametag Recipe
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.NAME_TAG, 1)
+                .input(Items.PAPER)
+                .input(Items.STRING)
+                .criterion(hasItem(Items.PAPER), conditionsFromItem(Items.PAPER))
+                .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
+                .offerTo(recipeExporter, Identifier.of("vanillaplus", "name_tag"));
 
         //  Fireproof Logs, Planks And Wood Blocks
         //  PLANKS

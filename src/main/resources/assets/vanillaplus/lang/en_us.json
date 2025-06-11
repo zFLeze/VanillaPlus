@@ -58,5 +58,8 @@
   "block.vanillaplus.fireproof_birch_log": "Fireproof Birch Log",
   "block.vanillaplus.fireproof_birch_wood": "Fireproof Birch Wood",
   "block.vanillaplus.fireproof_stripped_birch_log": "Fireproof Stripped Birch Log",
-  "block.vanillaplus.fireproof_stripped_birch_wood": "Fireproof Birch Wood"
+  "block.vanillaplus.fireproof_stripped_birch_wood": "Fireproof Birch Wood",
+
+
+  "itemgroup.vanillaplus.fireproof_wood_blocks": "Fireproof Wood Blocks"
 }
