@@ -33,7 +33,7 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "com.terraformersmc.terraform-api:terraform-wood-api-v1:1.0.1"
+	modImplementation "com.terraformersmc.terraform-api:terraform-wood-api-v1:14.0.0"
 
 
 	// Fabric API. This is technically optional, but you probably want it anyway.

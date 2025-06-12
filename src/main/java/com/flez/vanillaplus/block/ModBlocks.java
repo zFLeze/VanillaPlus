@@ -79,6 +79,8 @@ public class ModBlocks {
 
 
 
+
+
     public static final Block FIREPROOF_SPRUCE_PLANKS = registerBlock("fireproof_spruce_planks",
             new Block(AbstractBlock.Settings.create().strength(2f, 3f)
                     .sounds(BlockSoundGroup.WOOD)));
