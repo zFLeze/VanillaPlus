@@ -75,9 +75,17 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WOOD)
                     .nonOpaque()));
 
-    public static final Block FIREPROOF_OAK_SIGN = registerBlock("fireproof_oak_sign",
-            new SignBlock());
+    public static final Block FIREPROOF_OAK_SIGN = new SignBlock(
+            BlockSetType.OAK, AbstractBlock.Settings.create()
+            .strength(1f)
+            .sounds(BlockSoundGroup.WOOD),
+            
+    );
 
+    public static final Block FIREPROOF_OAK_WALL_SIGN = new WallSignBlock(
+            FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN).burnable(false),
+            SignType.OAK
+    );
 
 
 
