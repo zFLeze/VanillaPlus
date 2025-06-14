@@ -246,7 +246,7 @@ public class ModBlocks {
                     .strength(2f, 3f)
                     .sounds(BlockSoundGroup.WOOD)));
 
-    public static final Block FIREPROOF_DARK_OAK_BUTTON = registerBlock("fireproof_birch_button",
+    public static final Block FIREPROOF_DARK_OAK_BUTTON = registerBlock("fireproof_dark_oak_button",
             new ButtonBlock(BlockSetType.DARK_OAK, 15, AbstractBlock.Settings.create()
                     .strength(0.5f, 1.5f)
                     .noCollision()
